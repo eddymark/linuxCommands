@@ -69,7 +69,6 @@
 
 `git clone */path/to/repository*` : Create a working copy of a local repository 
 
-<<<<<<< HEAD
 `touch`- creates a file  
 
 `less`: read a text file
@@ -84,24 +83,13 @@
 `cp`: copy a file (within the same directory, if the second file does not exist, one will be created)
     E.g. cp *file 1* *file2* 
             cp apples apples2
-=======
-`git remote add origin <server>` : If you haven't connected your local repository to a remote server, add the server to be able to push to it. 
-
-
-
-## Branches
->>>>>>> ff1e8abae3ee2ca8a3ae240639940e6bca79bc99
 
 `git checkout -b <branchname>` : Create a new branch and switch to it.
 
-<<<<<<< HEAD
 `chmod`: 
 `mv` - move a file
     Syntax: mv {file} {directory} {new file name}
     (can be used to rename a file by leaving directory empty)
-=======
-`git checkout <branchname>` : Switch from one branch to another.
->>>>>>> ff1e8abae3ee2ca8a3ae240639940e6bca79bc99
 
 `git branch` : List all the branches in your repo, and also tell you what branch you're currently in.
 

@@ -8,27 +8,27 @@
 
 `ls` - list files in a directory
     Example use cases<br />
-`ls` -l : long detailed listing includes detailed read/write permissions, date file was created, date file was created, and name of the file 
-`ls` -a: list all (including hidden)
+`ls` -l` : long detailed listing includes detailed read/write permissions, date file was created, date file was created, and name of the file 
+`ls -a`: list all (including hidden)
 
-pwd - Present Working Directory
+`pwd` - Present Working Directory
     List current absolute directory
     
 
 FILE MANIPULATION
 
-touch- creates a file  
+`touch`- creates a file  
 
-less: read a text file
+`less`: read a text file
 
-rm: remove a file 
+`rm`: remove a file 
     E.g. rm *file name*
-rm -r: remove a directory
+`rm` -r: remove a directory
     E.g. rm -r *directory name*
-rmdir: remove a directory
-rm -rf: force removes everything (files/directories, etc do not use unless you know what you’re doing)
+`rmdir`: remove a directory
+`rm -rf`: force removes everything (files/directories, etc do not use unless you know what you’re doing)
 
-cp: copy a file (within the same directory, if the second file does not exist, one will be created)
+`cp`: copy a file (within the same directory, if the second file does not exist, one will be created)
     E.g. cp *file 1* *file2* 
             cp apples apples2
 
@@ -36,8 +36,8 @@ cp: copy a file (within the same directory, if the second file does not exist, o
     E.g. cp *file 1* ../*directory name*
            cp cobras.py ../snakes
 
-chmod: 
-Mv - move a file
+`chmod`: 
+`mv` - move a file
     Syntax: mv {file} {directory} {new file name}
     (can be used to rename a file by leaving directory empty)
 

@@ -1,22 +1,75 @@
 ## BASIC NAVIGATION
 
-`cd` - Change Directory
-    Example use cases
-    `cd` .. - Change to parent directory <br />
-    `cd` - return to root directory <br />
-    `cd` ../example/example - navigating multiple levels of a file tree <br />
 
-`ls` - list files in a directory
-    Example use cases<br />
-`ls` -l` : long detailed listing includes detailed read/write permissions, date file was created, date file was created, and name of the file 
-`ls -a`: list all (including hidden)
+`cd` : Change Directory
+#### Example use cases
+`cd ..` : Change to parent directory
 
-`pwd` - Present Working Directory
-    List current absolute directory
+`cd ~`  or  `cd` : return to root directory
+
+`cd ../example/example` : navigating multiple levels of a file tree
+
+
+`ls` : List segments; List files in a directory
+
+#### Example use cases
+
+`ls -l` : long detailed listing includes detailed read/write permissions, date file was created, date file was created, and name of the file 
+
+`ls -a` : list all (including hidden)
+
+`pwd` : Present Working Directory; List current absolute directory
     
 
-FILE MANIPULATION
+## FILE MANIPULATION
 
+`touch` : creates a file  
+
+`less` : read a text file
+
+`rm *file name*` : remove a file
+
+`rm -r *directory name*` : remove a directory
+
+`rmdir *directory name*` : remove a directory
+
+`rm -rf *directory name*` : force removes everything (files/directories, etc do not use unless you know what you’re doing)
+
+`cp` : copy a file (within the same directory, if the second file does not exist, one will be created)
+
+`cp *file1* *file2*` : copy file1 to file2
+
+`cp *file 1* ../*directory name*` : Copy a file to a different directory 
+
+`chmod` : change the permissions of file to _octal_
+
+`mv *file1* *directory*` : move a file to another directory
+
+`mv *file1* *newFileName*` : rename a file
+
+## Create a Local Repository 
+
+`git init` :  this initializes a repository 
+
+`git status` : Checks the status of the repository tracks any changes of the repository 
+
+`git add` : add files to git repository (use ‘.’ for all) 
+
+`git clone` : clone a repository 
+
+`git push` : this pushes the code to github 
+
+`git push origin master` : Send changes to the master branch of your remote repository. 
+
+`git remote add` : this adds the files to the repository 
+
+`git pull` : this pulls the files from a repository 
+
+`git commit -m *details about your process*` : this command commits the code to github and adds a message 
+
+`git clone */path/to/repository*` : Create a working copy of a local repository 
+
+<<<<<<< HEAD
 `touch`- creates a file  
 
 `less`: read a text file
@@ -31,50 +84,47 @@ FILE MANIPULATION
 `cp`: copy a file (within the same directory, if the second file does not exist, one will be created)
     E.g. cp *file 1* *file2* 
             cp apples apples2
+=======
+`git remote add origin <server>` : If you haven't connected your local repository to a remote server, add the server to be able to push to it. 
 
-    Copy a file to a different directory 
-    E.g. cp *file 1* ../*directory name*
-           cp cobras.py ../snakes
 
+
+## Branches
+>>>>>>> ff1e8abae3ee2ca8a3ae240639940e6bca79bc99
+
+`git checkout -b <branchname>` : Create a new branch and switch to it.
+
+<<<<<<< HEAD
 `chmod`: 
 `mv` - move a file
     Syntax: mv {file} {directory} {new file name}
     (can be used to rename a file by leaving directory empty)
+=======
+`git checkout <branchname>` : Switch from one branch to another.
+>>>>>>> ff1e8abae3ee2ca8a3ae240639940e6bca79bc99
 
+`git branch` : List all the branches in your repo, and also tell you what branch you're currently in.
 
-Create a Local Repository 
+`git branch -d <branchname>` : Delete the current  branch.
 
-Git Init -  this initializes a repository <br />
-Git status -  Checks the status of the repository tracks any changes of the repository <br />
-Git add - add files to git repository (use ‘.’ for all) <br />
-Git clone - clone a repository <br />
-Git push- this pushes the code to github <br />
-Git push origin master- Send changes to the master branch of your remote repository. <br />
-Git remote add - this adds the files to the repository <br />
-Git pull- this pulls the files from a repository <br />
-Git commit -m - this command commits the code to github and adds a message <br />
-Git clone /path/to/repository -Create a working copy of a local repository <br />
-Git remote add origin <server>- If you haven't connected your local repository to a remote server, add the server to be able to push to it. <br />
+`git push origin <branchname>` : Push the branch to your remote repository, so others can use it.
 
-
-Branches
-
-Git checkout -b <branchname> - Create a new branch and switch to it.<br />
-Git checkout <branchname> - Switch from one branch to another.<br />
-Git branch - List all the branches in your repo, and also tell you what branch you're currently in.<br />
-Git branch -d <branchname> - Delete the current  branch.<br />
-Git push origin <branchname> - Push the branch to your remote repository, so others can use it.<br />
-Git push --all origin - Push all branches to your remote repository.<br />
-git push origin :<branchname>
+`git push --all origin` : Push all branches to your remote repository.
 
 
 
+## HELP
+
+`{command} --help` : shows description and usage of a command.
+
+`man` : search the manual for a command
+
+`info` : gives more detailed information about a command then it's respective man pages
 
 
 
+## OTHER
 
+`cal` : displays the calendar in the terminal
 
-HELP
-{command} --help: shows description and usage of a command.
-Man: search the manual for a command
-
+`date` : displays the current date and time in the terminal
